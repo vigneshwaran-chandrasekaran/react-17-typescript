@@ -1,0 +1,11 @@
+to install react with typescript
+
+npx create-react-app my-app --template typescript
+
+and install types packages
+
+////////
+
+watch tomorrow
+
+https://www.youtube.com/watch?v=zLyeWSfTMa8&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=5&ab_channel=Codevolution
