@@ -3,6 +3,7 @@ import "./App.css";
 import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 
 /**
  * use type for applications,
@@ -38,6 +39,7 @@ function App() {
       <Greet name="Vigneshwaran" messageCount={23} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
+      <Status status="loading" />
     </div>
   );
 }
