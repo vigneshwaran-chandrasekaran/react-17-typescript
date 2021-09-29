@@ -1,16 +1,9 @@
-import React from "react";
+import { PersonProps } from "./Person.types";
 
 /**
  * use type for applications,
  * use interface for library
  */
-
-type PersonProps = {
-  name: {
-    first: string;
-    last: string;
-  };
-};
 
 export default function Person(props: PersonProps) {
   return (
