@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -48,6 +49,13 @@ function App() {
         value="vigneshwaran"
         handleChange={(event) => {
           console.log("InputInput change", event.target.value);
+        }}
+      />
+      <Container
+        styles={{
+          color: "green",
+          backgroundColor: "red",
+          padding: "1rem",
         }}
       />
       <Greet name="Vigneshwaran" messageCount={23} isLoggedIn={true} />
