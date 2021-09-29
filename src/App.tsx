@@ -10,6 +10,7 @@ import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import LoggeddIn from "./state/LoggeddIn";
+import User from "./state/User";
 
 /**
  * use type for applications,
@@ -47,6 +48,7 @@ function App() {
   return (
     <div className="App">
       <LoggeddIn />
+      <User />
       <Input
         value="vigneshwaran"
         handleChange={(event) => {
