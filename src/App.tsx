@@ -1,7 +1,9 @@
 import React from "react";
 import "./App.css";
+import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
+import Input from "./components/Input";
 import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
@@ -10,6 +12,10 @@ import Status from "./components/Status";
 /**
  * use type for applications,
  * use interface for library
+ */
+
+/**
+ * If you write object-oriented code — use interfaces, if you write functional code — use type aliases.
  */
 
 function App() {
@@ -38,6 +44,12 @@ function App() {
 
   return (
     <div className="App">
+      <Input
+        value="vigneshwaran"
+        handleChange={(event) => {
+          console.log("InputInput change", event.target.value);
+        }}
+      />
       <Greet name="Vigneshwaran" messageCount={23} isLoggedIn={true} />
       <Greet name="India" isLoggedIn={true} />
       <Person name={personName} />
@@ -47,6 +59,14 @@ function App() {
       <Oscar>
         <Heading>Render this header content</Heading>
       </Oscar>
+      <Button
+        handleClick={(event, id) => {
+          console.log("button clicked", id, event);
+        }}
+        handleOver={() => {
+          console.log("button hover");
+        }}
+      />
     </div>
   );
 }

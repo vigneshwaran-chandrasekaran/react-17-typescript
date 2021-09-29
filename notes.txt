@@ -9,3 +9,37 @@ and install types packages
 watch tomorrow
 
 https://www.youtube.com/watch?v=zLyeWSfTMa8&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK&index=5&ab_channel=Codevolution
+
+----------------------
+// https://gist.github.com/koss-lebedev/58bd0708a8c99e870dc9e05f795960db#file-intersection-with-union-type-ts
+
+type CreditCard = {
+  number: string
+  expMonth: number
+  expYear: number
+}
+
+// Type with union operator
+type Chargeable = { token: string } | { cvc: number }
+
+type ChargeableCreditCard = CreditCard & Chargeable
+
+/* ---------------------------------------
+Interpreted type type will look like this:
+type ChargeableCreditCard = (CreditCard & {
+    token: string;
+}) | (CreditCard & {
+    cvc: number;
+})
+----------------------------------
+to merge two types
+
+type SuperUser = User & { super: true }
+
+
+----------------------------------
+Interfaces are basically a way to describe data shapes, for example, an object.
+
+Type is a definition of a type of data, for example, a union, primitive, intersection, tuple, or any other type.
+
+----------------------------------
