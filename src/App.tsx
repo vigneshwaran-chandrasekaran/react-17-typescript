@@ -9,6 +9,7 @@ import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import DomRef from "./ref/DomRef";
 import LoggeddIn from "./state/LoggeddIn";
 import User from "./state/User";
 
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+      <DomRef />
       <LoggeddIn />
       <User />
       <Input
