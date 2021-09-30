@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Counter from "./class/Counter";
 import Button from "./components/Button";
 import Container from "./components/Container";
 import Greet from "./components/Greet";
@@ -48,6 +49,7 @@ function App() {
 
   return (
     <div className="App">
+      <Counter message="Vigneshwaran" />
       <DomRef />
       <LoggeddIn />
       <User />
