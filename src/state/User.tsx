@@ -5,6 +5,20 @@ type AuthUser = {
   email: string;
 };
 
+type UpdateAction = {
+  type: "increment" | "decrement";
+  payload: number;
+};
+
+type ResetAction = {
+  type: "reset";
+};
+
+/**
+ * this type will accept above two types values
+ */
+type CounterAction = UpdateAction | ResetAction;
+
 export default function User() {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [newUser, setNewUser] = useState<AuthUser>({} as AuthUser);
