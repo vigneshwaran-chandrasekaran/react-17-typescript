@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import Private from "./auth/Private";
+import Profile from "./auth/Profile";
 import Counter from "./class/Counter";
 import Button from "./components/Button";
 import Container from "./components/Container";
@@ -49,6 +51,8 @@ function App() {
 
   return (
     <div className="App">
+      <Private isLoggedIn={true} component={Profile} />
+      <Private isLoggedIn={false} component={Profile} />
       <Counter message="Vigneshwaran" />
       <DomRef />
       <LoggeddIn />
