@@ -14,6 +14,7 @@ import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import List from "./generics/List";
 import DomRef from "./ref/DomRef";
+import RandomNumber from "./restriction/RandomNumber";
 import LoggeddIn from "./state/LoggeddIn";
 import User from "./state/User";
 
@@ -52,6 +53,7 @@ function App() {
 
   return (
     <div className="App">
+      <RandomNumber value={3232} isZero />
       <List
         items={["one", "two", "three", "four", "five", "six"]}
         onClick={(item) => console.log(item)}
