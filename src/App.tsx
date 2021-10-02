@@ -12,6 +12,7 @@ import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import List from "./generics/List";
 import DomRef from "./ref/DomRef";
 import LoggeddIn from "./state/LoggeddIn";
 import User from "./state/User";
@@ -51,6 +52,21 @@ function App() {
 
   return (
     <div className="App">
+      <List
+        items={["one", "two", "three", "four", "five", "six"]}
+        onClick={(item) => console.log(item)}
+      />
+      <List items={[1, 2, 3, 4]} onClick={(item) => console.log(item)} />
+      {/* T extends {} - will solve below List array of objects */}
+      {/* <List
+        items={[
+          { id: 1, name: "hi" },
+          { id: 2, name: "two" },
+          { id: 3, name: "three" },
+          { id: 4, name: "four" },
+        ]}
+        onClick={(item) => console.log(item)}
+      /> */}
       <Private isLoggedIn={true} component={Profile} />
       <Private isLoggedIn={false} component={Profile} />
       <Counter message="Vigneshwaran" />
