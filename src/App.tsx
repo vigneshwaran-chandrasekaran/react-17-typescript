@@ -7,6 +7,7 @@ import Button from "./components/Button";
 import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
+import CustomButton from "./components/html/Button";
 import Input from "./components/Input";
 import Oscar from "./components/Oscar";
 import Person from "./components/Person";
@@ -54,6 +55,10 @@ function App() {
 
   return (
     <div className="App">
+      <CustomButton variant={"primary"}>Click me</CustomButton>
+      <CustomButton variant={"primary"} onClick={() => console.log("clicked")}>
+        Hello world me
+      </CustomButton>
       <Toast position={"center"} />
       <Toast position={"left-center"} />
       <RandomNumber value={3232} isZero />
