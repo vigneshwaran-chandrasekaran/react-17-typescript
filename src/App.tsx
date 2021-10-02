@@ -17,6 +17,7 @@ import DomRef from "./ref/DomRef";
 import RandomNumber from "./restriction/RandomNumber";
 import LoggeddIn from "./state/LoggeddIn";
 import User from "./state/User";
+import Toast from "./templateLiterals/Toast";
 
 /**
  * use type for applications,
@@ -53,6 +54,8 @@ function App() {
 
   return (
     <div className="App">
+      <Toast position={"center"} />
+      <Toast position={"left-center"} />
       <RandomNumber value={3232} isZero />
       <List
         items={["one", "two", "three", "four", "five", "six"]}
