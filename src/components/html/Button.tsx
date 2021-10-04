@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 type ButtonProps = {
-  variant: "primary" | "secondary";
-} & React.ComponentProps<"button">;
+  variant: 'primary' | 'secondary';
+} & React.ComponentProps<'button'>;
 
 /**
  * Other than our given variant prop, accept default button props using & React.ComponentProps<"button">

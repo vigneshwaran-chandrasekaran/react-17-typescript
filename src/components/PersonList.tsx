@@ -1,4 +1,4 @@
-import { Name } from "./Person.types";
+import { Name } from './Person.types';
 
 /**
  * use type for applications,
@@ -10,8 +10,8 @@ type PersonListProps = {
 };
 
 export default function PersonList(props: PersonListProps) {
-  console.log("PersonList props", props);
-  console.log("PersonList props", props.names);
+  console.log('PersonList props', props);
+  console.log('PersonList props', props.names);
   return (
     <div>
       <p>names list </p>

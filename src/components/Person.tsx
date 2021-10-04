@@ -1,4 +1,4 @@
-import { PersonProps } from "./Person.types";
+import { PersonProps } from './Person.types';
 
 /**
  * use type for applications,

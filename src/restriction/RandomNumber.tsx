@@ -30,8 +30,8 @@ export default function RandomNumber({
 }: RandomNumberProps) {
   return (
     <div>
-      {value} {isPositive && "Positive"} {isNegative && "Negative"}{" "}
-      {isZero && "Zero"}
+      {value} {isPositive && 'Positive'} {isNegative && 'Negative'}{' '}
+      {isZero && 'Zero'}
     </div>
   );
 }

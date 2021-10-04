@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-type InputProps = React.ComponentProps<"input">;
+type InputProps = React.ComponentProps<'input'>;
 
 /**
  * Other than our given variant prop, accept default input props using & React.ComponentProps<"input">

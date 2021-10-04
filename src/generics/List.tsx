@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 // Generic Props
 // https://youtu.be/xFNk2nfDh4M?list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK
@@ -22,13 +22,13 @@ export default function List<T extends string | number>({
       <h2>List of items</h2>
       {items.map((item, index: number) => {
         return (
-          <div
+          <button
             key={index}
             onClick={() => onClick(item)}
-            style={{ border: "1px solid red", padding: "10px", margin: "5px" }}
+            style={{ border: '1px solid red', padding: '10px', margin: '5px' }}
           >
             {item}
-          </div>
+          </button>
         );
       })}
     </div>

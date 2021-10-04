@@ -1,5 +1,5 @@
-import React from "react";
-import Greet from "../Greet";
+import React from 'react';
+import Greet from '../Greet';
 
 /**
  * use props of other components

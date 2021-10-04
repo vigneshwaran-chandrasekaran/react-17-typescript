@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 /**
  * use type for applications,
@@ -6,19 +6,19 @@ import React from "react";
  */
 
 type StatusProps = {
-  status: "loading" | "success" | "error";
+  status: 'loading' | 'success' | 'error';
 };
 
 export default function Status(props: StatusProps) {
   let message;
-  if (props.status === "loading") {
-    message = "Loading";
-  } else if (props.status === "success") {
-    message = "success";
-  } else if (props.status === "error") {
-    message = "error";
+  if (props.status === 'loading') {
+    message = 'Loading';
+  } else if (props.status === 'success') {
+    message = 'success';
+  } else if (props.status === 'error') {
+    message = 'error';
   }
-  console.log("Status props", props);
+  console.log('Status props', props);
   return (
     <div>
       <h2>Loading...</h2>

@@ -11,8 +11,8 @@ export default function Heading(props: HeadingProps) {
   return (
     <div
       style={{
-        border: "1px solid red",
-        padding: "10px",
+        border: '1px solid red',
+        padding: '10px',
       }}
     >
       <p>Heading Data... </p>

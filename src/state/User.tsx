@@ -1,23 +1,23 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 type AuthUser = {
   name: string;
   email: string;
 };
 
-type UpdateAction = {
-  type: "increment" | "decrement";
-  payload: number;
-};
+// type UpdateAction = {
+//   type: 'increment' | 'decrement';
+//   payload: number;
+// };
 
-type ResetAction = {
-  type: "reset";
-};
+// type ResetAction = {
+//   type: 'reset';
+// };
 
 /**
  * this type will accept above two types values
  */
-type CounterAction = UpdateAction | ResetAction;
+// type CounterAction = UpdateAction | ResetAction;
 
 export default function User() {
   const [user, setUser] = useState<AuthUser | null>(null);
@@ -25,12 +25,12 @@ export default function User() {
 
   const handleLogin = () => {
     setUser({
-      name: "vigneshwaran",
-      email: "hello@gmail.com",
+      name: 'vigneshwaran',
+      email: 'hello@gmail.com',
     });
     setNewUser({
-      name: "vigneshwaran Chandrasekaran",
-      email: "Chandrasekaran@gmail.com",
+      name: 'vigneshwaran Chandrasekaran',
+      email: 'Chandrasekaran@gmail.com',
     });
   };
 

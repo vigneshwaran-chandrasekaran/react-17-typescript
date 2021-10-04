@@ -14,9 +14,9 @@ export default function Oscar(props: OscarProps) {
   return (
     <div
       style={{
-        border: "1px solid yellow",
-        padding: "20px",
-        backgroundColor: "pink",
+        border: '1px solid yellow',
+        padding: '20px',
+        backgroundColor: 'pink',
       }}
     >
       <p>Oscar Data... </p>

@@ -12,7 +12,7 @@ import Input from './components/Input';
 import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
-import Text from './components/polymorphic/Text';
+// import Text from './components/polymorphic/Text';
 import Status from './components/Status';
 import List from './generics/List';
 import DomRef from './ref/DomRef';
@@ -35,7 +35,6 @@ function App() {
     first: 'super',
     last: 'start',
   };
-  const name = 'dfsdf';
   const nameList = [
     {
       first: 'one',
@@ -57,7 +56,7 @@ function App() {
 
   return (
     <div className="App">
-      <Text as="h1" size="sm" color="secondary">
+      {/* <Text as="h1" size="sm" color="secondary">
         sm secondary
       </Text>
       <Text as="p" size="sm">
@@ -65,7 +64,7 @@ function App() {
       </Text>
       <Text as="label" size="sm" color="secondary">
         sm
-      </Text>
+      </Text> */}
       <CustomButton variant={'primary'}>Click me</CustomButton>
       <CustomButton variant={'primary'} onClick={() => console.log('clicked')}>
         Hello world me

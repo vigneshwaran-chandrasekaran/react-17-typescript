@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 /**
  * use type for applications,
@@ -18,7 +18,7 @@ export default function Greet(props: GreetProps) {
       <p>
         My name is {props.name} messages {messageCount}
       </p>
-      <p> is logged in {props.isLoggedIn ? "Yes" : "No"}</p>
+      <p> is logged in {props.isLoggedIn ? 'Yes' : 'No'}</p>
     </div>
   );
 }
