@@ -1,25 +1,25 @@
-import React from "react";
-import "./App.css";
-import Private from "./auth/Private";
-import Profile from "./auth/Profile";
-import Counter from "./class/Counter";
-import Button from "./components/Button";
-import Container from "./components/Container";
-import Greet from "./components/Greet";
-import Heading from "./components/Heading";
-import CustomButton from "./components/html/Button";
-import Input from "./components/Input";
-import Oscar from "./components/Oscar";
-import Person from "./components/Person";
-import PersonList from "./components/PersonList";
-import Text from "./components/polymorphic/Text";
-import Status from "./components/Status";
-import List from "./generics/List";
-import DomRef from "./ref/DomRef";
-import RandomNumber from "./restriction/RandomNumber";
-import LoggeddIn from "./state/LoggeddIn";
-import User from "./state/User";
-import Toast from "./templateLiterals/Toast";
+import React from 'react';
+import './App.css';
+import Private from './auth/Private';
+import Profile from './auth/Profile';
+import Counter from './class/Counter';
+import Button from './components/Button';
+import Container from './components/Container';
+import Greet from './components/Greet';
+import Heading from './components/Heading';
+import CustomButton from './components/html/Button';
+import Input from './components/Input';
+import Oscar from './components/Oscar';
+import Person from './components/Person';
+import PersonList from './components/PersonList';
+import Text from './components/polymorphic/Text';
+import Status from './components/Status';
+import List from './generics/List';
+import DomRef from './ref/DomRef';
+import RandomNumber from './restriction/RandomNumber';
+import LoggeddIn from './state/LoggeddIn';
+import User from './state/User';
+import Toast from './templateLiterals/Toast';
 
 /**
  * use type for applications,
@@ -32,25 +32,26 @@ import Toast from "./templateLiterals/Toast";
 
 function App() {
   const personName = {
-    first: "super",
-    last: "start",
+    first: 'super',
+    last: 'start',
   };
+  const name = 'dfsdf';
   const nameList = [
     {
-      first: "one",
-      last: "two",
+      first: 'one',
+      last: 'two',
     },
     {
-      first: "three",
-      last: "four",
+      first: 'three',
+      last: 'four',
     },
     {
-      first: "five",
-      last: "six",
+      first: 'five',
+      last: 'six',
     },
     {
-      first: "seven",
-      last: "eight",
+      first: 'seven',
+      last: 'eight',
     },
   ];
 
@@ -65,15 +66,15 @@ function App() {
       <Text as="label" size="sm" color="secondary">
         sm
       </Text>
-      <CustomButton variant={"primary"}>Click me</CustomButton>
-      <CustomButton variant={"primary"} onClick={() => console.log("clicked")}>
+      <CustomButton variant={'primary'}>Click me</CustomButton>
+      <CustomButton variant={'primary'} onClick={() => console.log('clicked')}>
         Hello world me
       </CustomButton>
-      <Toast position={"center"} />
-      <Toast position={"left-center"} />
+      <Toast position={'center'} />
+      <Toast position={'left-center'} />
       <RandomNumber value={3232} isZero />
       <List
-        items={["one", "two", "three", "four", "five", "six"]}
+        items={['one', 'two', 'three', 'four', 'five', 'six']}
         onClick={(item) => console.log(item)}
       />
       <List items={[1, 2, 3, 4]} onClick={(item) => console.log(item)} />
@@ -96,14 +97,14 @@ function App() {
       <Input
         value="vigneshwaran"
         handleChange={(event) => {
-          console.log("InputInput change", event.target.value);
+          console.log('InputInput change', event.target.value);
         }}
       />
       <Container
         styles={{
-          color: "green",
-          backgroundColor: "red",
-          padding: "1rem",
+          color: 'green',
+          backgroundColor: 'red',
+          padding: '1rem',
         }}
       />
       <Greet name="Vigneshwaran" messageCount={23} isLoggedIn={true} />
@@ -117,10 +118,10 @@ function App() {
       </Oscar>
       <Button
         handleClick={(event, id) => {
-          console.log("button clicked", id, event);
+          console.log('button clicked', id, event);
         }}
         handleOver={() => {
-          console.log("button hover");
+          console.log('button hover');
         }}
       />
     </div>
