@@ -5,5 +5,5 @@ import Greet from "../Greet";
  * use props of other components
  */
 export const CustomComponent = (props: React.ComponentProps<typeof Greet>) => {
-  return <div>{console.log("props", props)}</div>;
+  return <div>{/* {console.log("props", props)} */}</div>;
 };
