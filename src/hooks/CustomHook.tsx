@@ -13,10 +13,14 @@ export type BeverageType = {
   level: number;
 };
 
-export const useFetchData = (
+// https://stackoverflow.com/questions/32308370/what-is-the-syntax-for-typescript-arrow-functions-with-generics
+// we have changed this useFetchData function as generic function
+// other than <T extends unknown> we can use <T, >
+
+export const useFetchData = <T extends unknown>(
   url: string
-): { data: BeverageType[] | null; done: boolean } => {
-  const [data, dataSet] = useState<BeverageType[] | null>(null);
+): { data: T | null; done: boolean } => {
+  const [data, dataSet] = useState<T | null>(null);
   const [done, doneSet] = useState<boolean>(false);
 
   useEffect(() => {
@@ -26,7 +30,7 @@ export const useFetchData = (
   useEffect(() => {
     fetch(url)
       .then((resp) => resp.json())
-      .then((res: BeverageType[]) => {
+      .then((res: T) => {
         console.log('res', res);
         dataSet(res);
         doneSet(true);
@@ -37,7 +41,7 @@ export const useFetchData = (
 };
 
 export const CustomHook = () => {
-  const { data, done } = useFetchData('/hv-taplist.json');
+  const { data, done } = useFetchData<BeverageType[]>('/hv-taplist.json');
   console.log('data data s', data);
   return (
     <div>
