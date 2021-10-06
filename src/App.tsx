@@ -15,6 +15,7 @@ import PersonList from './components/PersonList';
 // import Text from './components/polymorphic/Text';
 import Status from './components/Status';
 import List from './generics/List';
+import { CustomHook } from './hooks/CustomHook';
 import DomRef from './ref/DomRef';
 import RandomNumber from './restriction/RandomNumber';
 import LoggeddIn from './state/LoggeddIn';
@@ -56,6 +57,7 @@ function App() {
 
   return (
     <div className="App">
+      <CustomHook />
       {/* <Text as="h1" size="sm" color="secondary">
         sm secondary
       </Text>

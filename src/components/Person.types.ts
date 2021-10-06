@@ -1,8 +1,8 @@
 export type Name = {
-    first: string;
-    last: string;
+  first: string;
+  last: string;
 };
 
 export type PersonProps = {
-    name: Name;
+  name: Name;
 };
